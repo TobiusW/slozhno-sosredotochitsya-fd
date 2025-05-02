@@ -295,8 +295,6 @@
 }
 
 @media (width >= 1024px) {
-  :root {}
-
   .header__theme-menu {
     justify-self: center;
     align-self: start;
