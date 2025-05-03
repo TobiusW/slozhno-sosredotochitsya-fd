@@ -1,5 +1,5 @@
 .page {
-  font-family: var(--main-font), sans-serif;
+  font-family: var(--main-font), monospace;
   font-weight: var(--font-weight-normal);
   font-size: var(--font-size);
   line-height: var(--line-height);
@@ -99,7 +99,7 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid #FF007066;
+  border: 1px solid var(--head-menu-hover);
   cursor: pointer;
 }
 
@@ -178,7 +178,7 @@
 
 .section__gallery {
   display: grid;
-  grid-template-columns: 1;
+  grid-template-columns: 1fr;
   gap: var(--gallery-gap);
 }
 
@@ -236,7 +236,8 @@
   }
 
   .header__text {
-    width: 364px;
+    max-width: 364px;
+    width: 100%;
     justify-self: end;
   }
 
@@ -306,7 +307,8 @@
   }
 
   .header__text {
-    inline-size: 491px;
+    max-width: 491px;
+    width: 100%;
   }
   
   .section-intro {
@@ -317,12 +319,9 @@
     grid-column: 2 / 4;
   }
 
-  .section-quest {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
   .section-quest__block {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .section-answer {

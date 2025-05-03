@@ -6,6 +6,7 @@
   --page-bg-image-url: url(../images/cover-image-light.png);
   --decorated-color: #353430;
   --head-menu-color: #353430;
+  --head-menu-hover: #32312D66;
   --section-title-color: #353430;
   --head-title-color: #FFC2E6;
 }
@@ -23,6 +24,7 @@
     --page-bg-image-url: url(../images/cover-image-light.png);
     --decorated-color: #353430;
     --head-menu-color: #353430;
+    --head-menu-hover: #32312D66;
     --section-title-color: #353430;
     --head-title-color: #FFC2E6;
   }
